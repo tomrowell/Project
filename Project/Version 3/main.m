@@ -12,7 +12,7 @@ for i = 1:nargin-1
     varargin{i+1} = imcomplement(constructShape(shape1, shape2, disparity1, disparity2));
 end
 
-vertices1 = corner(varargin{nargin}, 'SensitivityFactor', 0.2);
+vertices1 = corner(varargin{nargin}, 'SensitivityFactor', 0.2, 'QualityLevel', 0.001);
 
 figure;
 imshow(varargin{nargin});

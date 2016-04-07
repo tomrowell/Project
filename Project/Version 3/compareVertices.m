@@ -1,6 +1,6 @@
 function [bestDisparity1, bestDisparity2] = compareVertices(shape1, shape2)
-vertices1 = corner(shape1, 'SensitivityFactor', 0.2);
-vertices2 = corner(shape2, 'SensitivityFactor', 0.2);
+vertices1 = corner(shape1, 'SensitivityFactor', 0.2, 'QualityLevel', 0.001);
+vertices2 = corner(shape2, 'SensitivityFactor', 0.2, 'QualityLevel', 0.001);
 
 bestCount = 0;
 bestDisparity1 = 0;
