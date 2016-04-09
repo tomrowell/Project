@@ -5,7 +5,7 @@ vertices2 = corner(shape2, 'SensitivityFactor', 0.2, 'QualityLevel', 0.001);
 bestCount = 0;
 bestDisparity1 = 0;
 bestDisparity2 = 0;
-uncertainty = 3;
+uncertainty = 5;
 
 for i = 1:length(vertices1)
    for j = 1:length(vertices2)
